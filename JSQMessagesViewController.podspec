@@ -1,21 +1,40 @@
-Pod::Spec.new do |s|
-	s.name					= 'JSQMessagesViewController'
-	s.version				= '6.1.3'
-	s.summary				= 'An elegant messages UI library for iOS.'
-	s.homepage				= 'http://jessesquires.github.io/JSQMessagesViewController'
-	s.license				= 'MIT'
-	s.screenshots			= ['https://raw.githubusercontent.com/jessesquires/JSQMessagesViewController/develop/Screenshots/screenshot0.png',
-								'https://raw.githubusercontent.com/jessesquires/JSQMessagesViewController/develop/Screenshots/screenshot1.png',
-								'https://raw.githubusercontent.com/jessesquires/JSQMessagesViewController/develop/Screenshots/screenshot2.png',
-								'https://raw.githubusercontent.com/jessesquires/JSQMessagesViewController/develop/Screenshots/screenshot3.png']
-	s.author				= { 'Jesse Squires' => 'jesse.squires.developer@gmail.com' }
-	s.social_media_url		= 'https://twitter.com/jesse_squires'
-	s.source				= { :git => 'https://github.com/jessesquires/JSQMessagesViewController.git', :tag => s.version.to_s }
-	s.platform				= :ios, '7.0'	
-	s.source_files			= 'JSQMessagesViewController/**/*.{h,m}'
-	s.resources				= 'JSQMessagesViewController/Assets/JSQMessagesAssets.bundle', 'JSQMessagesViewController/Assets/Strings/*.lproj', 'JSQMessagesViewController/**/*.{xib}',
-	s.frameworks			= 'QuartzCore', 'CoreGraphics', 'CoreLocation', 'MapKit', 'UIKit', 'Foundation'
-	s.requires_arc			= true
+#
+# Be sure to run `pod lib lint JSQMessagesViewController.podspec' to ensure this is a
+# valid spec and remove all comments before submitting the spec.
+#
+# Any lines starting with a # are optional, but encouraged
+#
+# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
+#
 
-	s.dependency 'JSQSystemSoundPlayer', '~> 2.0.1'
+Pod::Spec.new do |s|
+  s.name             = "JSQMessagesViewController"
+  s.version          = "0.1.0"
+  s.summary          = "A short description of JSQMessagesViewController."
+  s.description      = <<-DESC
+                       An optional longer description of JSQMessagesViewController
+
+                       * Markdown format.
+                       * Don't worry about the indent, we strip it!
+                       DESC
+  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JSQMessagesViewController"
+  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.license          = 'MIT'
+  s.author           = { "Gaia-Murata" => "Soichiro_Murata@voyagegroup.com" }
+  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JSQMessagesViewController.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.platform     = :ios, '7.0'
+  s.requires_arc = true
+
+
+  s.source_files		= 'Pod/Classes/**/*'
+  s.resources			= 'Pod/Assets/**/*'
+#  s.resource_bundles = {
+#    'JSQMessagesViewController' => ['Pod/Assets/*.png']
+#  }
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end
